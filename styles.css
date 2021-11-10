@@ -1,0 +1,205 @@
+/* GlOBAL FORMATTING */
+
+@font-face {
+  font-family: VHS;
+  src: url("./assets/VCR_OSD_MONO_1.001.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "VHS";
+  background: red;
+  opacity: 0.98;
+}
+
+.highlight {
+  border-left: 10px solid white;
+}
+
+.site-container {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  /* height: 100vh; */
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.site-content {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-left: solid white 4px;
+  border-right: solid white 4px;
+  overflow: hidden;
+}
+
+.main-left {
+  position: fixed;
+  grid-column: 1/2;
+  /* border-right: solid white 6px; */
+  background: red !important;
+  height: 100vh !important;
+}
+
+.main-right {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  overflow-y: visible;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: red;
+}
+
+/* ABOUT SECTION */
+
+.nav-links {
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.nav-links a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  transition: 0.3s;
+  display: block;
+}
+
+.about-section {
+  padding: 10px 10px 10px 10px;
+  margin: 60px 20px;
+  width: auto;
+  height: fit-content;
+  border: solid white 2px;
+  background-color: white;
+}
+
+#main-img {
+  width: 100%;
+  height: auto;
+}
+
+.about-content {
+  background-color: white;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#about-name {
+  margin: 10px 0 15px 0;
+  background-color: white;
+}
+
+/* Audio Section */
+
+.audio-section {
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px;
+  width: auto;
+  height: fit-content;
+  border: solid white 2px;
+  background: white;
+}
+
+#audio-header {
+  margin: 15px 0;
+  background: white;
+}
+
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+}
+.album {
+  background: white;
+  z-index: 2;
+  padding: 10px;
+  margin: 10px;
+  width: 310px;
+  height: 35image shadow css 0px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 1px 1px red;
+  opacity: 1 !important;
+}
+
+.album:hover {
+  background: red !important;
+  color: white;
+  transition: 0.3s;
+}
+
+.album img {
+  width: 100%;
+  background: white;
+}
+
+.album-title {
+  background: white;
+  padding-top: 10px;
+}
+
+.italics {
+  background: white;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.album:hover h3 {
+  background: red;
+}
+
+.album:hover span {
+  background: red;
+}
+
+/* Video Section */
+
+.video-section {
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px;
+  width: auto;
+  height: 1000px;
+  border: solid white 2px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-section iframe {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  background: white;
+}
+
+#video-header {
+  background: white;
+  margin: 15px 0;
+}
+
+.video-title {
+  background: white;
+  margin: 10px 25px 20px;
+}
+
+/* Player Section */
+.audio-player {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+.audio-player iframe {
+}
