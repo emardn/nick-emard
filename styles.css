@@ -1,12 +1,12 @@
 /* GlOBAL FORMATTING */
 
-/* @font-face {
-  font-family: VHS;
-  src: url("./assets/VCR_OSD_MONO_1.001.ttf");
-} */
 @font-face {
   font-family: VHS;
-  src: url("./assets/Lato-Black.ttf");
+  src: url("./assets/VCR_OSD_MONO_1.001.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("./assets/Lato-Regular.ttf");
 }
 
 * {
@@ -60,12 +60,12 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-  
-  .site-content {  
-  border-left: solid white 4px;
-  border-right: solid white 4px;
-  overflow: hidden;
-}
+
+  .site-content {
+    border-left: solid white 4px;
+    border-right: solid white 4px;
+    overflow: hidden;
+  }
 }
 
 .main-right {
@@ -117,6 +117,7 @@
 .about-content {
   background-color: white;
   font-size: 18px;
+  font-family: "Lato";
   margin: 20px 0;
 }
 
@@ -172,12 +173,14 @@
 .album-title {
   background: white;
   padding-top: 10px;
+  font-family: "Lato";
 }
 
 .italics {
   background: white;
   font-style: italic;
   font-weight: 900;
+  font-family: "Lato";
 }
 
 .album:hover h3 {
@@ -238,6 +241,7 @@
 
 .video-title {
   background: white;
+  font-family: "Lato";
   margin: 10px 25px 20px;
 }
 
