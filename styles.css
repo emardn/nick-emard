@@ -40,6 +40,23 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 1000px) {
+  .site-container {
+    display: flex;
+  }
+  .site-content {
+    align-items: center;
+    justify-content: center;
+  }
+  .main-left {
+    display: none;
+  }
+  .main-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .main-left {
   position: fixed;
   grid-column: 1/2;
