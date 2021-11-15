@@ -1,8 +1,12 @@
 /* GlOBAL FORMATTING */
 
-@font-face {
+/* @font-face {
   font-family: VHS;
   src: url("./assets/VCR_OSD_MONO_1.001.ttf");
+} */
+@font-face {
+  font-family: VHS;
+  src: url("./assets/Lato-Black.ttf");
 }
 
 * {
@@ -43,6 +47,25 @@
   background: rgba(0, 0, 255, 0.8) !important;
   height: 100vh !important;
   opacity: 0.9;
+}
+@media only screen and (max-width: 1000px) {
+  .main-left {
+    display: none;
+  }
+  .site-container {
+    display: flex;
+    /* grid-template-columns: 1000px; */
+    /* height: 100vh; */
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .site-content {  
+  border-left: solid white 4px;
+  border-right: solid white 4px;
+  overflow: hidden;
+}
 }
 
 .main-right {
