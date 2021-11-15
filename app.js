@@ -91,18 +91,18 @@ const bullets1 = document.querySelector("#bullets-1");
 const bullets2 = document.querySelector("#bullets-2");
 const degraved = document.querySelector("#degraved");
 
-document.addEventListener(
-  "play",
-  function (e) {
-    // Collect all <audio> elements in the page:
-    var allAudios = document.getElementsByTagName("audio");
-    // Iterate through all players and pause them, except for
-    // the one who fired the "play" event ("target")
-    for (var i = 0; i < allAudios.length; i++) {
-      if (allAudios[i] != e.target) {
-        allAudios[i].pause();
-      }
-    }
-  },
-  true
-);
+// document.addEventListener(
+//   "play",
+//   function (e) {
+//     // Collect all <audio> elements in the page:
+//     var allAudios = document.getElementsByTagName("audio");
+//     // Iterate through all players and pause them, except for
+//     // the one who fired the "play" event ("target")
+//     for (var i = 0; i < allAudios.length; i++) {
+//       if (allAudios[i] != e.target) {
+//         allAudios[i].pause();
+//       }
+//     }
+//   },
+//   true
+// );
