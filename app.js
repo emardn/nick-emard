@@ -8,30 +8,30 @@ const highlightMenu = () => {
 
   //adds highlight class to my menu items
 
-  if (window.innerWidth > 960 && scrollPos < 500) {
+  if (window.innerWidth > 960 && scrollPos < 900) {
     homeMenu.classList.add("highlight");
     audioMenu.classList.remove("highlight");
     // videoMenu.classList.remove("highlight");
     // contactMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 1900) {
+    ;
+  } else if (window.innerWidth > 960 && scrollPos < 3000 && scrollPos > 900) {
     audioMenu.classList.add("highlight");
     homeMenu.classList.remove("highlight");
     videoMenu.classList.remove("highlight");
     // contactMenu.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 2945) {
+    ;
+  } else if (window.innerWidth > 960 && scrollPos > 2945 && scrollPos < 4500) {
     videoMenu.classList.add("highlight");
     audioMenu.classList.remove("highlight");
     contactMenu.classList.remove("highlight");
     // homeMenu.classList.remove("highlight");
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 3500) {
+    ;
+  } else if (window.innerWidth > 960 && scrollPos > 4500) {
     contactMenu.classList.add("highlight");
     // audioMenu.classList.remove("highlight");
     videoMenu.classList.remove("highlight");
     // homeMenu.classList.remove("highlight");
-    return;
+    ;
   }
   if ((elem && wubdiw.innerWidth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove("highlight");
@@ -55,21 +55,21 @@ const scrollHome = () => {
 };
 const scrollAudio = () => {
   window.scroll({
-    top: 750,
+    top: 1000,
     left: 0,
     behavior: "smooth",
   });
 };
 const scrollVideo = () => {
   window.scroll({
-    top: 2350,
+    top: 3150,
     left: 0,
     behavior: "smooth",
   });
 };
 const scrollContact = () => {
   window.scroll({
-    top: 0,
+    top: 4600,
     left: 0,
     behavior: "smooth",
   });
