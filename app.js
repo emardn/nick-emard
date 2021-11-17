@@ -13,25 +13,21 @@ const highlightMenu = () => {
     audioMenu.classList.remove("highlight");
     // videoMenu.classList.remove("highlight");
     // contactMenu.classList.remove("highlight");
-    ;
   } else if (window.innerWidth > 960 && scrollPos < 3000 && scrollPos > 900) {
     audioMenu.classList.add("highlight");
     homeMenu.classList.remove("highlight");
     videoMenu.classList.remove("highlight");
     // contactMenu.remove("highlight");
-    ;
-  } else if (window.innerWidth > 960 && scrollPos > 2945 && scrollPos < 4500) {
+  } else if (window.innerWidth > 960 && scrollPos > 2945 && scrollPos < 4300) {
     videoMenu.classList.add("highlight");
     audioMenu.classList.remove("highlight");
     contactMenu.classList.remove("highlight");
     // homeMenu.classList.remove("highlight");
-    ;
-  } else if (window.innerWidth > 960 && scrollPos > 4500) {
+  } else if (window.innerWidth > 960 && scrollPos > 4300) {
     contactMenu.classList.add("highlight");
     // audioMenu.classList.remove("highlight");
     videoMenu.classList.remove("highlight");
     // homeMenu.classList.remove("highlight");
-    ;
   }
   if ((elem && wubdiw.innerWidth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove("highlight");
@@ -55,14 +51,14 @@ const scrollHome = () => {
 };
 const scrollAudio = () => {
   window.scroll({
-    top: 1000,
+    top: 1050,
     left: 0,
     behavior: "smooth",
   });
 };
 const scrollVideo = () => {
   window.scroll({
-    top: 3150,
+    top: 3050,
     left: 0,
     behavior: "smooth",
   });

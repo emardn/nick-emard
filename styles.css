@@ -142,7 +142,7 @@
 
 .about-content {
   font-size: 18px;
-  font-family: "VHS";
+  font-family: "Lato" !important;
   margin: 20px 0;
   color: white;
   letter-spacing: 3px;
@@ -153,6 +153,7 @@
   margin: 10px 0 15px 0;
   letter-spacing: 8px;
   font-size: 40px;
+  padding-bottom: 15px;
 
   color: white;
   text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
@@ -185,7 +186,7 @@
 
 .audio-subtext {
   font-size: 18px;
-  font-family: "VHS";
+  font-family: "Lato";
   margin: 20px 0;
   color: white;
   letter-spacing: 3px;
@@ -219,6 +220,16 @@
   margin-bottom: 20px;
 }
 
+figcaption {
+  color: white;
+  font-size: 12px;
+  margin-right: 5px;
+  font-family: "Lato";
+  text-align: right;
+  font-style: italic;
+  padding: 5px;
+}
+
 .album:hover {
   background: rgba(0, 0, 255, 0.8) !important;
   color: white;
@@ -228,11 +239,12 @@
 .album img {
   width: 100%;
   background: white;
+  padding-bottom: 20px;
 }
 
 .album-title {
   padding-top: 10px;
-  font-family: "VHS";
+  font-family: "Lato";
   letter-spacing: 2px;
   line-height: 25px;
   color: white;
@@ -243,8 +255,7 @@
   font-weight: 900;
   color: white;
   letter-spacing: 2px;
-
-  font-family: "VHS";
+  font-family: "Lato";
 }
 
 .album:hover h3 {
@@ -312,7 +323,7 @@
 }
 
 .video-title {
-  font-family: "VHS";
+  font-family: "Lato";
   margin: 10px 25px 20px;
   color: white;
   background: none;
@@ -419,7 +430,7 @@ textarea:focus {
 
 .contact-subtext {
   font-size: 18px;
-  font-family: "VHS";
+  font-family: "Lato";
   margin: 20px 0 40px 0;
   color: white;
   letter-spacing: 3px;
@@ -433,11 +444,11 @@ textarea:focus {
 /* THANK YOU */
 
 #thank-you-body {
-    background: rgba(0, 0, 255, 0.7) !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20%;
+  background: rgba(0, 0, 255, 0.7) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
 }
 
 .thank-you-container {
