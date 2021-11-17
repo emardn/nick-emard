@@ -371,7 +371,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding: 30px;
+  padding: 20px;
 }
 
 #contact-form {
