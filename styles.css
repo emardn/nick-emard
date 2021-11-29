@@ -22,8 +22,8 @@
 
 .site-container {
   display: grid;
-  grid-template-columns: 1fr 1000px 1fr;
-  grid-template-rows: 150px auto;
+  grid-template-columns: 1fr 1100px 1fr;
+  grid-template-rows: 100px auto;
   /* background-color:rgba(0, 0, 255, 0.2); */
   background-color: black;
   z-index: 0;
@@ -32,11 +32,11 @@
 }
 
 .site-content {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
   grid-column: 2/3;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr 1fr;
   /* border-top: solid black 4px;
   border-left: solid black 4px;
   border-right: solid black 4px;
@@ -49,6 +49,12 @@
   justify-content: center;
   grid-column: 2/3;
 }
+
+.divider-section {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -60,42 +66,9 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-  .site-container {
-    display: flex;
-    width: 100%;
-  }
-  .site-content {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .main-left {
-    display: none;
-  }
-  .main-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .album {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: max-content !important;
-    flex-grow: 1;
-  }
-  .album iframe {
-    width: 100% !important;
-    /* height: fit-content !important; */
-    flex-grow: 1;
-  }
+  width: 500px;
+  /* margin-bottom: 10px; */
+  /* margin-top: 10px; */
 }
 
 .main-left {
@@ -103,22 +76,22 @@
   background: black !important;
   position: sticky;
   top: 0;
-  margin: 10px;
+  left: 0;
+  margin: 0px;
 }
 
 .main-right {
   grid-column: 2/3;
   display: flex;
+
   flex-direction: column;
   overflow-y: visible;
 
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   /* background-attachment: fixed; */
   /* background: rgba(0, 0, 255, 0.7); */
   background-image: url("./assets/gradient-long.jpg");
-  box-shadow: white 2px 2px 1px, white -2px 2px 1px, white -2px -2px 1px,
-    white 2px -2px 1px, white 0px 2px 1px, white 0px -2px 1px, white 2px 0px 1px,
-    white -2px 0px 1px;
+  background-size: cover;
 }
 
 /* ABOUT SECTION */
@@ -147,10 +120,12 @@
 }
 
 .about-section {
-  padding: 20px 30px 30px 30px;
-  margin: 60px 80px 60px 40px;
+  padding: 30px 30px 0px 30px;
+  margin: 0;
   width: auto;
   height: fit-content;
+  align-items: center;
+  justify-content: center;
   border: solid white 2px;
   box-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
     black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px, black 2px 0px 1px,
@@ -166,12 +141,12 @@
 }
 
 .about-content {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lato" !important;
   margin: 20px 0;
   color: white;
-  letter-spacing: 3px;
-  line-height: 30px;
+  letter-spacing: 2px;
+  line-height: 28px;
 }
 
 #about-name {
@@ -190,7 +165,7 @@
 
 .audio-section {
   padding: 20px 30px 30px 30px;
-  margin: 60px 80px 60px 40px;
+  margin: 0;
   width: auto;
   height: fit-content;
   border: solid white 2px;
@@ -256,7 +231,7 @@ figcaption {
 }
 
 .album:hover {
-  background: rgba(0, 0, 255, 0.8) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   color: white;
   transition: 0.3s;
 }
@@ -295,7 +270,7 @@ figcaption {
 
 .video-section {
   padding: 20px 30px 30px 30px;
-  margin: 60px 80px 60px 40px;
+  margin: 0;
   width: auto;
   height: fit-content;
   border: solid white 2px;
@@ -328,7 +303,7 @@ figcaption {
 }
 
 .video:hover {
-  background: rgba(0, 0, 255, 0.8);
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 .video:hover .video-title {
@@ -370,7 +345,7 @@ figcaption {
 
 .contact-section {
   padding: 20px 30px 30px 30px;
-  margin: 60px 80px 60px 40px;
+  margin: 0;
   width: auto;
   height: fit-content;
   border: solid white 2px;
@@ -492,4 +467,221 @@ textarea:focus {
 
 .back {
   font-size: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .site-container {
+    display: flex;
+    width: fit-content;
+    margin: 12px;
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .site-content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .header-section {
+  }
+  .logo-container {
+  }
+  .logo {
+    width: 400px;
+  }
+  .main-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-left {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    grid-column: 2/3;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 20px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    background: black;
+    margin-bottom: 20px;
+  }
+  .nav-links a {
+    /* padding: 8px 8px 8px 32px; */
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    filter: blur(0.4px);
+    text-shadow: 0px 0px 3px #333333;
+    text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
+      black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px,
+      black 2px 0px 1px, black -2px 0px 1px;
+
+    display: flex;
+  }
+
+  .about-content {
+  font-size: 14px;
+  font-family: "Lato" !important;
+  margin: 20px 0;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+
+  .audio-section {
+    padding: 20px 30px 30px 30px;
+    margin: 0;
+    width: auto;
+    height: fit-content;
+    border: solid white 2px;
+    box-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
+      black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px,
+      black 2px 0px 1px, black -2px 0px 1px;
+  }
+
+  .album-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 100%; */
+    flex-grow: column;
+  }
+
+  .album {
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: space-around;
+    width: 250px;
+    height: 350px;
+  }
+  .album iframe {
+    grid-row: 1/2;
+    width: 225px !important;
+    height: 225px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #audio-header {
+    margin: 10px 0 15px 0;
+    letter-spacing: 8px;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
+      black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px,
+      black 2px 0px 1px, black -2px 0px 1px;
+  }
+
+  .audio-subtext {
+    font-size: 14px;
+    font-family: "Lato";
+    margin: 20px 0;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    display: flex;
+  }
+
+  
+
+  .album img {
+    width: 100%;
+    background: white;
+    padding-bottom: 0px;
+  }
+
+  .album-title {
+    padding-top: 0px;
+    font-family: "Lato";
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-size: 13px;
+    color: white;
+  }
+
+  .italics {
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Lato";
+  }
+
+  .album:hover h3 {
+    background: rgba(0, 0, 255, 0) !important;
+  }
+
+  .album:hover span {
+    background: rgba(0, 0, 255, 0);
+  }
+}
+
+
+@media screen and (max-width: 810px) {
+  .nav-links a {
+    font-size: 14px;
+  }
+  .main-left {
+    background: black;
+    width: 100%
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .album {
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: space-around;
+    width: 150px;
+    height: 300px;
+  }
+  .album iframe {
+    grid-row: 1/2;
+    width: 150px !important;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+  }
+  .about-content {
+  font-size: 12px;
+  font-family: "Lato" !important;
+  margin: 20px 0;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
 }
