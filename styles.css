@@ -110,7 +110,6 @@
   text-decoration: none;
   font-size: 30px;
   color: #ffffff;
-  filter: blur(0.4px);
   text-shadow: 0px 0px 3px #333333;
   text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
     black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px, black 2px 0px 1px,
@@ -535,7 +534,6 @@ textarea:focus {
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
-    /* filter: blur(0.4px); */
     /* text-shadow: 0px 0px 3px #333333; */
     text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px,
       black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px,
@@ -545,13 +543,13 @@ textarea:focus {
   }
 
   .about-content {
-  font-size: 14px;
-  font-family: "Lato" !important;
-  margin: 20px 0;
-  color: white;
-  letter-spacing: 2px;
-  line-height: 24px;
-}
+    font-size: 14px;
+    font-family: "Lato" !important;
+    margin: 20px 0;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 24px;
+  }
 
   .audio-section {
     padding: 20px 30px 30px 30px;
@@ -611,8 +609,6 @@ textarea:focus {
     display: flex;
   }
 
-  
-
   .album img {
     width: 100%;
     background: white;
@@ -645,14 +641,13 @@ textarea:focus {
   }
 }
 
-
 @media screen and (max-width: 810px) {
   .nav-links a {
     font-size: 14px;
   }
   .main-left {
     background: black;
-    width: 100%
+    width: 100%;
   }
 
   .logo {
@@ -677,11 +672,11 @@ textarea:focus {
     margin: 0;
   }
   .about-content {
-  font-size: 12px;
-  font-family: "Lato" !important;
-  margin: 20px 0;
-  color: white;
-  letter-spacing: 2px;
-  line-height: 23px;
-}
+    font-size: 12px;
+    font-family: "Lato" !important;
+    margin: 20px 0;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 23px;
+  }
 }
