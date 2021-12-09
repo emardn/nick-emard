@@ -719,6 +719,12 @@ textarea:focus {
     overflow-x: hidden;
   }
 
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .main-left {
     width: 300%;
   }
