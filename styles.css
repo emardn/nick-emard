@@ -609,6 +609,16 @@ textarea:focus {
     margin: 0;
   }
 
+  .album:hover {
+    background: rgba(0, 0, 0, 0) !important;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .video:hover {
+    background: rgba(0, 0, 0, 0) !important;
+  }
+
   #audio-header {
     margin: 10px 0 15px 0;
     letter-spacing: 8px;
