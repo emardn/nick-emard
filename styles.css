@@ -716,6 +716,7 @@ textarea:focus {
   .site-container {
     width: auto;
     display: flex;
+    overflow-x: hidden;
   }
 
   .main-left {
