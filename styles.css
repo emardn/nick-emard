@@ -120,7 +120,7 @@ h3 {
 }
 
 .nav-links a {
-  padding: 8px 8px 8px 32px;
+  padding: 14px 10px 8px 10px;
   text-decoration: none;
   font-size: 20px;
   margin-bottom: 20px;
@@ -545,7 +545,7 @@ textarea:focus {
     width: 100%;
     height: fit-content;
     justify-content: center;
-    background: black;
+    background: black !important;
     padding-top: 0;
   }
   .nav-links a {
@@ -710,4 +710,33 @@ textarea:focus {
     letter-spacing: 2px;
     line-height: 23px;
   }
+}
+
+@media screen and (max-width: 600px) {
+   .album-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 100%; */
+    flex-grow: column;
+  }
+
+  .album {
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: space-around;
+    width: 290px;
+    height: 400px;
+  }
+  .album iframe {
+    grid-row: 1/2;
+    width: 290px !important;
+    height: 290px;
+    padding: 0;
+    margin: 0;
+  }
+  
 }
