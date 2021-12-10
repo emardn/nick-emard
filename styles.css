@@ -20,6 +20,8 @@
   image-rendering: crisp-edges;
   ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   scroll-behavior: smooth;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 body > div {
