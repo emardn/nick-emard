@@ -75,9 +75,9 @@ if (window.innerWidth < 603 && window.innerWidth > 500) {
 }
 
 if (window.innerWidth < 500) {
-  audioPoint = 700;
+  audioPoint = 675;
   videoPoint = 3550;
-  contactPoint = 4675;
+  contactPoint = 4650;
 }
 
 const scrollHome = () => {
