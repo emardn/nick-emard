@@ -489,7 +489,8 @@ textarea:focus {
 @media screen and (max-width: 900px) {
   .site-container {
     display: flex;
-    width: fit-content;
+    overflow-x: hidden;
+    width: 100%;
     margin: 12px;
     margin-top: 0;
     padding-left: 100px;
