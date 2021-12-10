@@ -44,31 +44,31 @@ const contactLink = document.querySelector("#contact-page");
 
 let audioPoint, videoPoint, contactPoimport;
 
-if (window.innerWidth > 900) {
+if (window.innerWidth >= 900) {
   audioPoint = 950;
   videoPoint = 2950;
   contactPoint = 4300;
 }
 
-if (window.innerWidth < 900 && window.innerWidth > 811) {
+if (window.innerWidth < 900 && window.innerWidth >= 811) {
   audioPoint = 900;
   videoPoint = 2550;
   contactPoint = 3900;
 }
 
-if (window.innerWidth < 811 && window.innerWidth > 753) {
+if (window.innerWidth < 811 && window.innerWidth >= 753) {
   audioPoint = 850;
   videoPoint = 2050;
   contactPoint = 3375;
 }
 
-if (window.innerWidth < 753 && window.innerWidth > 603) {
+if (window.innerWidth < 753 && window.innerWidth >= 603) {
   audioPoint = 850;
   videoPoint = 2350;
   contactPoint = 3725;
 }
 
-if (window.innerWidth < 603 && window.innerWidth > 500) {
+if (window.innerWidth < 603 && window.innerWidth >= 500) {
   audioPoint = 700;
   videoPoint = 3500;
   contactPoint = 4625;
