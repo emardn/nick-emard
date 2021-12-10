@@ -90,7 +90,7 @@ h3 {
 .main-left {
   grid-column: 1/2;
   background: black !important;
-  position: sticky !important;
+  position: sticky;
   top: 0;
   left: 0;
   margin: 0px;
