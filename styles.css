@@ -21,13 +21,6 @@
   ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   /* scroll-behavior: smooth; */
 }
-html,
-body {
-  overflow-x: hidden;
-}
-.site-container {
-  position: sticky;
-}
 
 body > div {
   transform: translate3d(0, 0, 0);
