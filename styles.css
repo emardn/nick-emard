@@ -20,8 +20,6 @@
   image-rendering: crisp-edges;
   ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   scroll-behavior: smooth;
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
 }
 
 body > div {
@@ -489,8 +487,7 @@ textarea:focus {
 @media screen and (max-width: 900px) {
   .site-container {
     display: flex;
-    overflow-x: hidden;
-    width: 100%;
+    width: fit-content;
     margin: 12px;
     margin-top: 0;
     padding-left: 100px;
