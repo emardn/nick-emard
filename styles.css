@@ -19,6 +19,7 @@
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  scroll-behavior: smooth;
 }
 
 body > div {
@@ -718,7 +719,6 @@ textarea:focus {
     display: flex;
     overflow-x: hidden;
   }
-  
 
   .main-left {
     width: 300%;
