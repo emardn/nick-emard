@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
 }
 .site-container {
-  position: relative;
+  position: sticky;
 }
 
 body > div {
